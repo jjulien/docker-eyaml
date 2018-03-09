@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/usr/local/bin/eyaml "$@" --pkcs7-public-key=/etc/eyaml/public-key.pem
