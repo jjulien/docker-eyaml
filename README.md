@@ -1,12 +1,12 @@
 # Docker eyaml Container
-This container allows you to easily get encrypted values for your Puppet infrastructure using hiera-eyam.
+This container allows you to easily get encrypted values for your Puppet infrastructure using hiera-eyaml.
 
 The only thing you need to do is add your public key, which can be done in one of two ways.  
 
-1. Create a new container that contains your public key
-2. Mount the public key at runtime
+1. [Create a new container that contains your public key](#option-1---create-a-new-container-that-contains-your-public-key)
+2. [Mount the public key at runtime](#option-2---mount-the-public-key-at-runtime)
 
-Option 1 is the preferred way usually as then you can allow multiple consumers to easily use the container to encrypt values without having to track down the public key too.
+Option 1 is the preferred way, as then you can allow multiple consumers to easily use the container to encrypt values without having to track down the public key too.
 
 ### Option 1 - Create a new container that contains your public key
 To use this method, create a new Dockerfile that looks like the following
